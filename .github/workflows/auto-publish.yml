@@ -13,6 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: w3c/spec-prod@v2
+      env:
+        ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
         with:
           TOOLCHAIN: respec
           VALIDATE_LINKS: false
